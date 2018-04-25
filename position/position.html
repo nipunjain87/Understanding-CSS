@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<style type="text/css">
+			.red {
+				background-color: red;
+				left: 10px;
+				top: 10px;
+			}
+			
+			.green {
+				background-color: green;
+			}
+			
+			.blue {
+				background-color: blue;
+			}
+
+			.topleft {
+				left: 10px;
+				top: 10px;
+			}
+
+			.static {
+				position: static;
+			}
+
+			.relative {
+				position: relative;
+			}
+
+			.absolute {
+				position: absolute;
+			}
+
+			.fixed {
+				position: fixed;
+			}
+
+			.sticky {
+				position: sticky;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<div>-->
+			<!--<div>Default position: static. The top, bottom, right, left css doesn't work.</div>-->
+			<!--<div>Position Relative: element does n't come out of the flow. The top, bottom, right, left properties work. They alter the position of element relative to itself.</div>-->
+			<!--<div class="red">Red</div>-->
+			<!--<div class="green relative">Green</div>-->
+			<!--<div class="blue">Blue</div>-->
+		<!--</div>-->
+		<!--<br>-->
+		<!--<br>-->
+		<!--<div>-->
+			<!--<div>Position Absolute: element comes out of the flow. The top, bottom, right, left properties work. They alter the position of element relative to itself.</div>-->
+			<!--<div class="red">Red</div>-->
+			<!--<div class="green absolute">Green</div>-->
+			<!--<div class="blue">Blue</div>-->
+		<!--</div>-->
+
+		<!--<br>-->
+		<!--<br>-->
+		<!--<div class="relative">-->
+			<!--<div>Position Absolute: element comes out of the flow. The top, bottom, right, left properties work. They alter the position of element relative to itself.</div>-->
+			<!--<div class="red">Red</div>-->
+			<!--<div class="green absolute">Green</div>-->
+			<!--<div class="blue">Blue</div>-->
+		<!--</div>-->
+
+		<!--<br>-->
+		<!--<br>-->
+		<div>
+			<div>Position Absolute: element comes out of the flow. The top, bottom, right, left properties work. They alter the position of element relative to itself.</div>
+			<div class="red">Red</div>
+			<div class="sticky">
+				<div class="green absolute topleft">Green</div>
+			</div>
+			<div class="blue">Blue</div>
+		</div>
+	</body>
+</html>

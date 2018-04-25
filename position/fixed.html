@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .topleft {
+            top: 20px;
+            left: 20px;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>Fixed is an absolute that works relative to viewport not any ancestoral element. Adding position as fixed takes an element out of flow.</div>
+        <div>The top, left, bottom, right css properties work as it is.</div>
+        <div>If an element is positioned as fixed, it just comes out of the flow, but stays at its position.</div>
+        <div class="red">Red</div>
+        <div class="green fixed topleft">Green</div>
+        <div class="blue">Blue</div>
+    </div>
+</body>
+</html>

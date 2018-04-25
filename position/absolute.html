@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .static {
+            position: static;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .sticky {
+            position: sticky;
+        }
+
+        .topleft {
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>Absolute element comes out of the flow. Absolute work relative to positioned ancestral element. Any element having position not as static is considered positioned.</div>
+    <div>The top, left, bottom, right css properties work as it is.</div>
+    <div>
+        <div class="red">Red</div>
+        <div class="green absolute topleft">Green</div>
+        <div class="blue">Blue</div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div class="red">Red</div>
+        <div class="static">
+            <div class="green absolute topleft">Green with parent static</div>
+        </div>
+        <div class="blue">Blue</div>
+    </div>
+
+
+    <br>
+    <br>
+    <div>
+        <div class="red">Red</div>
+        <div class="relative">
+            <div class="green absolute topleft">Green with parent relative</div>
+        </div>
+        <div class="blue">Blue</div>
+    </div>
+
+    <br>
+    <br>
+    <div>
+        <div class="red">Red</div>
+        <div class="absolute">
+            <div class="green absolute topleft">Green with parent absolute</div>
+        </div>
+        <div class="blue">Blue</div>
+    </div>
+
+    <br>
+    <br>
+    <div>
+        <div class="red">Red</div>
+        <div class="fixed">
+            <div class="green absolute topleft">Green with parent fixed</div>
+        </div>
+        <div class="blue">Blue</div>
+    </div>
+
+    <br>
+    <br>
+    <div>
+        <div class="red">Red</div>
+        <div class="sticky">
+            <div class="green absolute topleft">Green with parent sticky</div>
+        </div>
+        <div class="blue">Blue</div>
+    </div>
+</body>
+</html>
